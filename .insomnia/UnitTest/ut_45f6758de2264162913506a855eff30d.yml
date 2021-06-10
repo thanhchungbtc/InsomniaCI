@@ -1,10 +1,12 @@
 _id: ut_45f6758de2264162913506a855eff30d
 type: UnitTest
 parentId: uts_32ad7e95b4fa43b2ac161a0b213dd052
-modified: 1623320715877
+modified: 1623320811152
 created: 1623320713039
 requestId: req_0a6d3ca591a2418e97acc7b9a6e3b6ce
 name: List subjects
 code: |-
+  await insomnia.send('req_49414d1a0d9642ee93dce0dd7a40d4e7');
+
   const response1 = await insomnia.send();
   expect(response1.status).to.equal(200);
