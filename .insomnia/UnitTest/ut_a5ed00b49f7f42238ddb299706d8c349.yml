@@ -1,15 +1,10 @@
 _id: ut_a5ed00b49f7f42238ddb299706d8c349
 type: UnitTest
 parentId: uts_77759c4edc0e4f55b3d8d2e52c05cdab
-modified: 1623315836460
+modified: 1623319897389
 created: 1623314504872
-requestId: req_0a6d3ca591a2418e97acc7b9a6e3b6ce
-name: List subjects
+requestId: req_49414d1a0d9642ee93dce0dd7a40d4e7
+name: Login
 code: |-
   const response1 = await insomnia.send();
   expect(response1.status).to.equal(200);
-
-  const body = JSON.parse(response1.data);
-
-  // 科目データがあること
-  expect(body.length).to.be.least(1);
