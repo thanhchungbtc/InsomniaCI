@@ -1,9 +1,9 @@
 _id: req_49414d1a0d9642ee93dce0dd7a40d4e7
 type: Request
 parentId: fld_3cff5cb504af477dad469d7966dd645e
-modified: 1623314421606
+modified: 1623319568325
 created: 1623311263982
-url: "{{ _.host }}/api/auth/login"
+url: "{{ _.apiBaseUrl }}/auth/login"
 name: login with id (success case)
 description: ""
 method: POST
