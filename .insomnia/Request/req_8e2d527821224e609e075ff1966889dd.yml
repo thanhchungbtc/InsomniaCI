@@ -1,0 +1,29 @@
+_id: req_8e2d527821224e609e075ff1966889dd
+type: Request
+parentId: fld_906dfc92a6b341a1b427dba6a348f501
+modified: 1623313522685
+created: 1623313151179
+url: "{{ _.apiBaseUrl }}/lessons/{% response 'body',
+  'req_64193b2d475a47d78194dd5e86d67a0b', 'b64::JC5yZXN1bHRzWzBdLmlk::46b',
+  'never', 60 %}"
+name: get lesson detail
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Authorization
+    value: "{% response 'body', 'req_49414d1a0d9642ee93dce0dd7a40d4e7',
+      'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+    description: ""
+    id: pair_9162414f67a84510a4a0318e06845709
+    disabled: false
+authentication: {}
+metaSortKey: -1623311368276.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

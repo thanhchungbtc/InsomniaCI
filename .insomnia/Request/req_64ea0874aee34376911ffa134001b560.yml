@@ -1,0 +1,27 @@
+_id: req_64ea0874aee34376911ffa134001b560
+type: Request
+parentId: wrk_b9fa7e54045e48b8a6803f3bbe7b0d07
+modified: 1623313918932
+created: 1623313908295
+url: "{{ _.apiBaseUrl }}/master"
+name: master
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Authorization
+    value: "{% response 'body', 'req_49414d1a0d9642ee93dce0dd7a40d4e7',
+      'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+    description: ""
+    id: pair_9162414f67a84510a4a0318e06845709
+    disabled: false
+authentication: {}
+metaSortKey: -1623313488536
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

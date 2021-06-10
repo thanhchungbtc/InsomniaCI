@@ -1,0 +1,31 @@
+_id: req_49414d1a0d9642ee93dce0dd7a40d4e7
+type: Request
+parentId: fld_3cff5cb504af477dad469d7966dd645e
+modified: 1623314421606
+created: 1623311263982
+url: "{{ _.host }}/api/auth/login"
+name: login with id (success case)
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "teacher1@test01.jp",
+    	"password": "password",
+    	"schoolCode": "TEST001"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_327d65326700403db102b159ada9614d
+authentication: {}
+metaSortKey: -1623311472721
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

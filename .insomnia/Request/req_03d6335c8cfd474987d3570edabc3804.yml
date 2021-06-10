@@ -1,0 +1,71 @@
+_id: req_03d6335c8cfd474987d3570edabc3804
+type: Request
+parentId: fld_4f4daa282a944a61abd875d29921c502
+modified: 1623315046382
+created: 1623313552050
+url: "{{ _.apiBaseUrl }}/subjects"
+name: create subject
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "targetGrade": [
+            4,
+            1
+        ],
+        "timeTables": [
+            {
+                "endTime": "10:30:00",
+                "startTime": "09:00:00",
+                "weekday": 1
+            },
+            {
+                "endTime": "10:30:00",
+                "startTime": "09:00:00",
+                "weekday": 2
+            }
+        ],
+        "draft": false,
+        "categoryIds": [
+            1,
+            2
+        ],
+        "weekdays": [
+            {
+                "value": 1,
+                "times": [
+                    1
+                ]
+            }
+        ],
+        "release": 1,
+        "name": "TEST_SUBJECT_{% uuid 'v4' %}",
+        "teacherIds": [
+            1
+        ],
+        "content": "TEST",
+        "status": 0,
+        "code": "{% uuid 'v4' %}"
+    }
+parameters: []
+headers:
+  - name: Authorization
+    value: "{% response 'body', 'req_49414d1a0d9642ee93dce0dd7a40d4e7',
+      'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+    description: ""
+    id: pair_9162414f67a84510a4a0318e06845709
+    disabled: false
+  - name: Content-Type
+    value: application/json
+    id: pair_07c0c193fdbc433fb457db89a01026c9
+authentication: {}
+metaSortKey: -1623311420473.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

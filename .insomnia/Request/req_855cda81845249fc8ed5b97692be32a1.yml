@@ -1,0 +1,34 @@
+_id: req_855cda81845249fc8ed5b97692be32a1
+type: Request
+parentId: fld_4f4daa282a944a61abd875d29921c502
+modified: 1623317438770
+created: 1623317398425
+url: "{{ _.apiBaseUrl }}/subjects/{% response 'body',
+  'req_03d6335c8cfd474987d3570edabc3804', 'b64::JC5zdWJqZWN0Lmlk::46b', 'never',
+  60 %}"
+name: get updated subject detail
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Authorization
+    value: "{% response 'body', 'req_49414d1a0d9642ee93dce0dd7a40d4e7',
+      'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+    description: ""
+    id: pair_9162414f67a84510a4a0318e06845709
+    disabled: false
+  - name: Content-Type
+    value: application/json
+    id: pair_2f6622b47866420c86cfeeb2a066c2a0
+authentication: {}
+metaSortKey: -1623311420323.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

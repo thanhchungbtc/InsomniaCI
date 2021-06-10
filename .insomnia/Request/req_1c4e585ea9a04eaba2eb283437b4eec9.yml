@@ -1,0 +1,29 @@
+_id: req_1c4e585ea9a04eaba2eb283437b4eec9
+type: Request
+parentId: fld_4f4daa282a944a61abd875d29921c502
+modified: 1623313945767
+created: 1623313107908
+url: "{{ _.apiBaseUrl }}/categories/{% response 'body',
+  'req_64ea0874aee34376911ffa134001b560', 'b64::JC5jYXRlZ29yaWVzWzBdLmlk::46b',
+  'never', 60 %}/subjects"
+name: list subjects by category
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Authorization
+    value: "{% response 'body', 'req_49414d1a0d9642ee93dce0dd7a40d4e7',
+      'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+    description: ""
+    id: pair_9162414f67a84510a4a0318e06845709
+    disabled: false
+authentication: {}
+metaSortKey: -1623311472721
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,15 @@
+_id: ut_2bf6fdb402384ca987c8d9b1d8095981
+type: UnitTest
+parentId: uts_77759c4edc0e4f55b3d8d2e52c05cdab
+modified: 1623317536192
+created: 1623315083897
+requestId: req_176fd9085de545a495032ec40f0ab37f
+name: Get created subject
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);
+
+  const body = JSON.parse(response1.data);
+
+  // timetablesの２つ登録しておいたので
+  expect(body.timetables.length).to.be.equal(2);

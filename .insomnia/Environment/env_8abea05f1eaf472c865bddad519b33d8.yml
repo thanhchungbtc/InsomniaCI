@@ -1,0 +1,16 @@
+_id: env_8abea05f1eaf472c865bddad519b33d8
+type: Environment
+parentId: env_1182889cea2b817c67d74c10296d9c968f9558fa
+modified: 1623318651830
+created: 1623318601949
+name: Test Env
+data:
+  host: localhost:8001
+  apiBaseUrl: localhost:8001/api
+dataPropertyOrder:
+  "&":
+    - host
+    - apiBaseUrl
+color: null
+isPrivate: false
+metaSortKey: 1623318601949

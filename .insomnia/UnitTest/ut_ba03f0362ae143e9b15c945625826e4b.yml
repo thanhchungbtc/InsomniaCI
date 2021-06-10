@@ -1,0 +1,10 @@
+_id: ut_ba03f0362ae143e9b15c945625826e4b
+type: UnitTest
+parentId: uts_77759c4edc0e4f55b3d8d2e52c05cdab
+modified: 1623314872050
+created: 1623314739076
+requestId: req_93926c5874c5427dba178cc737209c49
+name: Get subject detail
+code: |
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

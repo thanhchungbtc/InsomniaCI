@@ -1,0 +1,14 @@
+_id: ut_defdaf5959eb49e493ac3c267de20622
+type: UnitTest
+parentId: uts_77759c4edc0e4f55b3d8d2e52c05cdab
+modified: 1623317801090
+created: 1623317566619
+requestId: req_8e1d8343d54c4a75871fe15c8735fdf7
+name: Update subject
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);
+
+  const body = JSON.parse(response1.data);
+
+  expect(body).to.have.property('subject');

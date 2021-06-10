@@ -1,0 +1,14 @@
+_id: ut_842275032e954762b5bcf920de8be6c9
+type: UnitTest
+parentId: uts_77759c4edc0e4f55b3d8d2e52c05cdab
+modified: 1623315693220
+created: 1623314877639
+requestId: req_03d6335c8cfd474987d3570edabc3804
+name: Create subject
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(201);
+
+  const body = JSON.parse(response1.data);
+
+  expect(body).to.have.property('subject');
